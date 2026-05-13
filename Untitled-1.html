@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Live Cricket Scorecard - IPL 2024 Match">
+    <meta name="keywords" content="cricket, scorecard, IPL, live score, match">
+    <meta name="author" content="CricketScore App">
+    <meta name="theme-color" content="#1e3a8a">
+    
+    <!-- Open Graph Meta Tags (Social Media) -->
+    <meta property="og:title" content="CSK vs MI - Live Scorecard">
+    <meta property="og:description" content="Chennai Super Kings vs Mumbai Indians - IPL 2024 Final">
+    <meta property="og:image" content="https://example.com/cricket-scorecard.jpg">
+    <meta property="og:url" content="https://cricketscore.com/match/123">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSK vs MI - Live Scorecard">
+    <meta name="twitter:description" content="Final Over: CSK needs 5 runs!">
+    <meta name="twitter:image" content="https://example.com/cricket-scorecard.jpg">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="/manifest.json">
+    
+    <title>CSK vs MI - Live Cricket Scorecard</title>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .scorecard { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4); 
+            color: white; 
+            padding: 20px; 
+            text-align: center;
+        }
+        .match-info { background: #f8f9fa; padding: 15px; }
+        .team-score { padding: 20px; border-bottom: 2px solid #eee; }
+        .team-name { font-size: 1.5em; font-weight: bold; margin-bottom: 10px; }
+        .score { font-size: 2.5em; font-weight: bold; color: #2c3e50; }
+        .wickets { color: #e74c3c; font-size: 1.2em; }
+        .overs { color: #7f8c8d; }
+        .batsmen, .bowlers { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 15px; }
+        .player { padding: 10px; background: #f8f9fa; border-radius: 8px; }
+        .player-name { font-weight: bold; }
+        .status { text-align: center; padding: 20px; background: #e8f5e8; font-size: 1.1em; font-weight: bold; color: #27ae60; }
+        @media (max-width: 600px) { .score { font-size: 2em; } }
+    </style>
+</head>
+<body>
+    <div class="scorecard">
+        <!-- Match Header -->
+        <div class="header">
+            <h1>🏏 IPL 2024 Final</h1>
+            <p>Chennai Super Kings vs Mumbai Indians</p>
+            <div style="font-size: 1.2em; margin-top: 10px;">Match 74 • Eden Gardens, Kolkata</div>
+        </div>
+
+        <!-- Match Status -->
+        <div class="status">
+            CSK needs 12 runs in 2 balls
+        </div>
+
+        <!-- Team 1 Score -->
+        <div class="team-score">
+            <div class="team-name">Chennai Super Kings <span class="wickets">7/198</span></div>
+            <div class="score">19.4 Overs</div>
+            <div class="overs">Target 199</div>
+        </div>
+
+        <!-- Batsmen -->
+        <div class="team-score">
+            <h3 style="margin-bottom: 10px; color: #2c3e50;">Current Batsmen</h3>
+            <div class="batsmen">
+                <div class="player">
+                    <div class="player-name">Ruturaj Gaikwad*</div>
+                    <div>78 (52)</div>
+                    <div>9x4 • 3x6 • SR: 150.00</div>
+                </div>
+                <div class="player">
+                    <div class="player-name">MS Dhoni†</div>
+                    <div>12* (4)</div>
+                    <div>2x4 • SR: 300.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bowlers -->
+        <div class="team-score">
+            <h3 style="margin-bottom: 10px; color: #2c3e50;">Mumbai Indians Bowling</h3>
+            <div class="bowlers">
+                <div class="player">
+                    <div class="player-name">Jasprit Bumrah</div>
+                    <div>4-0-28-2</div>
+                    <div>ECON: 7.00</div>
+                </div>
+                <div class="player">
+                    <div class="player-name">Hardik Pandya</div>
+                    <div>3-0-42-1</div>
+                    <div>ECON: 14.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team 2 Score -->
+        <div class="team-score" style="border-bottom: none;">
+            <div class="team-name">Mumbai Indians</div>
+            <div class="score">7/197 (19.3)</div>
+        </div>
+    </div>
+</body>
+</html>
